@@ -1,0 +1,56 @@
+<!--
+  Fancy Settings by Frank Kohlhepp
+  Copyright (c) 2011 - 2012 Frank Kohlhepp
+  https://github.com/frankkohlhepp/fancy-settings
+  License: MIT-license
+-->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title id="title"></title>
+    
+    <!-- Stylesheets -->
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="lib/default.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="custom.css">
+    
+    <!-- JavaScripts -->
+    <script src="lib/mootools.js"></script>
+    <script src="lib/store.js"></script>
+    <script src="js/classes/tab.js"></script>
+    <script src="js/classes/setting.js"></script>
+    <script src="js/classes/search.js"></script>
+    <script src="js/classes/fancy-settings.js"></script>
+    <script src="i18n.js"></script>
+    <script src="js/i18n.js"></script>
+    <script src="manifest.js"></script>
+    <script src="settings.js"></script>
+  </head>
+  <body class="no-select design-buttons">
+    <div id="sidebar">
+      <h1 id="name"></h1>
+      <div id="tab-container">
+        <div id="search-tab"></div>
+      </div>
+    </div>
+
+    <div id="content">
+      <!-- Search box -->
+      <div id="search-container">
+        <input id="search" type="search">
+      </div>
+      
+      <!-- Search tab content -->
+      <div id="search-tab-content">
+        <h2 id="search-tab-name"></h2>
+        <div id="search-tab-settings">
+            <div id="nothing-found"></div>
+        </div>
+      </div>
+    </div>
+    <a href="chrome.extension.getURL('background.html')">Debugging</a>
+  </body>
+</html>

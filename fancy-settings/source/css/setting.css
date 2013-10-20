@@ -1,0 +1,149 @@
+/*
+ * Fancy Settings by Frank Kohlhepp
+ * Copyright (c) 2011 - 2012 Frank Kohlhepp
+ * https://github.com/frankkohlhepp/fancy-settings
+ * License: MIT-license
+ */
+.tab-content {
+  display: none;
+  margin-bottom: 50px;
+}
+html.searching .tab-content.match,
+html.measuring .tab-content {
+  display: block;
+}
+#search-tab-content {
+  display: none;
+}
+html.searching #search-tab-content {
+  display: block;
+}
+.tab-name,
+#search-tab-name {
+  position: fixed;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0.4, #fff), color-stop(1, rgba(255,255,255,0.92)));
+  background: -webkit-linear-gradient(top, #fff 40%, rgba(255,255,255,0.92) 100%);
+  background: -moz-linear-gradient(top, #fff 40%, rgba(255,255,255,0.92) 100%);
+  background: -o-linear-gradient(top, #fff 40%, rgba(255,255,255,0.92) 100%);
+  background: -ms-linear-gradient(top, #fff 40%, rgba(255,255,255,0.92) 100%);
+  background: linear-gradient(top, #fff 40%, rgba(255,255,255,0.92) 100%);
+  border-bottom: 1px solid #eee;
+  width: 720px;
+  top: 0;
+  padding-top: 14px;
+  padding-bottom: 6px;
+  font-size: 1.5em;
+  color: #303942;
+  z-index: 1;
+}
+html.searching .tab-name,
+html.searching #search-tab-name {
+  display: none;
+}
+html.searching #search-tab-name {
+  display: block;
+}
+.tab-settings {
+  margin-top: 63px;
+}
+html.searching .tab-content.match + .tab-content.match .tab-settings {
+  margin-top: -30px;
+}
+.setting.group {
+  margin-top: 20px;
+}
+html.searching .setting.group {
+  display: none;
+}
+html.searching .setting.group.match,
+html.measuring .setting.group {
+  display: block;
+}
+.setting.group-name {
+  color: #000;
+  font-size: 1.2em;
+}
+.setting.group-content {
+  margin-top: 5px;
+  margin-left: 22px;
+}
+.setting.bundle {
+  width: 700px;
+  margin-bottom: 10px;
+}
+html.searching .setting.bundle {
+  display: none;
+}
+html.searching .setting.bundle.match,
+html.measuring .setting.bundle {
+  display: block;
+}
+.setting.container {
+  width: 700px;
+}
+.setting.label,
+.setting.element-label {
+  margin-right: 20px;
+  font-size: 13px;
+}
+.setting.label.checkbox,
+.setting.element-label.radiogroup {
+  position: relative;
+  margin-left: 5px;
+  margin-right: 0;
+  top: 1px;
+}
+.setting.element.textarea {
+  display: block;
+  margin-top: 10px;
+  margin-left: 20px;
+  width: 620px;
+  height: 150px;
+}
+.setting.element.label {
+  font-size: 12px;
+  line-height: 1.8em;
+  color: #777;
+}
+.setting.element.slider {
+  position: relative;
+  width: 200px;
+  top: 4px;
+}
+.setting.display.slider {
+  margin-left: 8px;
+  color: #555;
+}
+.setting.label.radiogroup {
+  display: inline-block;
+  margin-bottom: 2px;
+}
+.setting.element-group.radiogroup {
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.setting.label.radiogroup + .setting.element-group.radiogroup {
+  margin-top: 0;
+}
+.setting.container.radiogroup {
+  margin-left: 20px;
+}
+.setting.element-group-name.radiogroup {
+  margin-bottom: 2px;
+  font-size: 13px;
+}
+.setting.element-group-content.radiogroup {
+  border-left: 1px solid #ccc;
+  margin-left: 5px;
+}
+.setting.element-group-content.radiogroup .setting.container.radiogroup {
+  margin-left: 15px;
+}
+#nothing-found {
+  display: none;
+  margin-top: 67px;
+}
+html.searching #nothing-found.match {
+  display: block;
+}

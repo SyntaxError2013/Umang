@@ -1,0 +1,29 @@
+{
+	"name": "Cache Manager",
+	"version": "0.1",
+	"manifest_version": 2,
+	"description": "Never wait for your favorite Web-Pages to load",
+	"browser_action": {
+		"default_icon": "icon.png",
+        "default_title": "Manage Cache Pages"
+    },
+    "author": "Umang Ganvir",
+	"background" : {
+		"page": "background.html",
+		"persistent": true
+	},
+	"options_page": "fancy-settings/source/index.html",
+	"content_scripts": [
+	{
+		"matches": ["http://*/*", "https://*/*"],
+		"js": ["main.js"]
+	}
+	],
+	"permissions": [
+    	"tabs"
+  	],
+	"icons": {
+		"48": "icon48.png",
+		"128": "icon128.png"
+	}
+}
